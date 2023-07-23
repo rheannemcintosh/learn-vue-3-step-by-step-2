@@ -1,15 +1,14 @@
 <script setup>
 import TheWelcome from '../components/TheWelcome.vue';
-import { ref } from "vue";
 
-let message = ref("Hello, World!)";
+let message = $ref("Hello, World!)";
 
 let doSomething = () => {
   alert("doing it now");
 }
 
 setTimeout(() => {
-  message.value = "I Have Been Changed";
+  message = "I Have Been Changed";
 }, 2000);
 
 </script>
