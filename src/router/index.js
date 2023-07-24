@@ -28,7 +28,7 @@ const router = createRouter({
     },
     {
       path: '/episode-19',
-      name: 'episode-29',
+      name: 'episode-19',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.

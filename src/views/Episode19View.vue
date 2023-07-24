@@ -1,4 +1,11 @@
-<script setup>
+<script>
+    export default {
+        methods: {
+            flash(message) {
+                alert(message);
+            }
+        }
+    }
 
 </script>
 
@@ -7,7 +14,7 @@
     <TheWelcome />
 
     <p>
-      <button>Click Me</button>
+      <button @click="flash('It Works!')">Click Me</button>
     </p>
   </main>
 </template>
