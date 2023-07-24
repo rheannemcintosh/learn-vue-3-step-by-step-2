@@ -9,7 +9,7 @@
     <TheWelcome />
 
     <p>
-      <button @click="flash('It Works!')">Click Me</button>
+      <button @click="flash('Oops', 'Something went wrong!', 'error')">Click Me</button>
     </p>
   </main>
 </template>
