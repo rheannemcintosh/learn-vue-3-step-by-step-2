@@ -1,7 +1,7 @@
 <script setup>
 import TheWelcome from '../components/TheWelcome.vue';
 
-let message = $ref("Hello, World!)";
+let message = $ref("Hello, World!");
 
 let doSomething = () => {
   alert("doing it now");
