@@ -5,6 +5,11 @@
 
     let age = useStorage('age');
 
+    let obj = useStorage('obj', { one: 'one'});
+
+    setTimeout(() => {
+        obj.value.one = 'CHANGED';
+    }, 3000);
 </script>
 
 <template>

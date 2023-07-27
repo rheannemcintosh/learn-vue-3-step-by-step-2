@@ -11,17 +11,17 @@ export function useStorage(key, val = null) {
         write();
     }
 
-    watch(val, write);
+    watch(val, write, { deep: true });
 
     function read() {
-        return localStorage.getItem(key);
+        return JSON.parse(localStorage.getItem(key));
     }
 
     function write() {
         if (val.value === null || val.value === '') {
             localStorage.removeItem(key);
         } else {
-            localStorage.setItem(key, val.value);
+            localStorage.setItem(key, JSON.stringify(val.value));
         }
     }
 
