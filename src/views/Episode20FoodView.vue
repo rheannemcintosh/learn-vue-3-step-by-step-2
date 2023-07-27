@@ -1,24 +1,10 @@
 <script setup>
     import { ref, watch } from "vue";
+    import { useStorage } from "@/composables/useStorage";
 
-    let food = ref(localStorage.getItem('food'));
-    let age = ref(localStorage.getItem('age'));
+    let food = useStorage('food');
 
-    watch(food, (val) => {
-        write('food', val)
-    });
-
-    watch(age, (val) => {
-        write('age', val)
-    });
-
-    function write(key, value) {
-        localStorage.setItem(key, value);
-    }
-
-    setTimeout(( => {
-        food.value = 'changed';
-    }, 2000);
+    let age = useStorage('age');
 
 </script>
 
