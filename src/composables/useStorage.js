@@ -16,7 +16,7 @@ export function useStorage(key, val = null) {
     });
 
     function write() {
-        if (val.value === '') {
+        if (val.value === null || val.value === '') {
             localStorage.removeItem(key);
         } else {
             localStorage.setItem(key, val.value);
