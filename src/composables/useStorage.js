@@ -11,9 +11,7 @@ export function useStorage(key, val = null) {
         write();
     }
 
-    watch(val, () => {
-        write();
-    });
+    watch(val, write);
 
     function write() {
         if (val.value === null || val.value === '') {
