@@ -3,8 +3,7 @@
 
     import { ref } from "vue";
 
-
-    let comment = ref('test value');
+    let comment = ref('');
 </script>
 
 <template>
