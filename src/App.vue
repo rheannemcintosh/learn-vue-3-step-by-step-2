@@ -17,6 +17,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/episode-19">Episode 19</RouterLink>
         <RouterLink to="/episode-19-page-2">Episode 19-2</RouterLink>
         <RouterLink to="/episode-20">Episode 20</RouterLink>
+        <RouterLink to="/episode-21">Episode 21</RouterLink>
       </nav>
     </div>
   </header>
