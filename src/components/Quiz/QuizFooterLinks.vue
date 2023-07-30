@@ -1,6 +1,7 @@
 <template>
   <div>
-    <button @click="changeName">{{ name }}</button>
+    <h5>{{ state.name }}</h5>
+    <button @click="state.name = 'A New Quiz Name'"></button>
 
     <ul>
       <li><a href="#">Get a Job</a></li>
@@ -10,13 +11,5 @@
 </template>
 
 <script setup>
-  import { inject } from "vue";
-
-  defineProps({ quiz: Object });
-
-  let { name, changeName } = inject('name');
-
-  setTimeout(() => {
-    name.value = 'A New Name';
-  },2000);
+  import { state } from "@/stores/quizStore";
 </script>
