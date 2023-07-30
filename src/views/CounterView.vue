@@ -10,6 +10,6 @@
     <p>
       {{ counter.count }}
     </p>
-    <button @click="counter.count++">Increment</button>
+    <button @click="counter.increment()">Increment</button>
   </div>
 </template>
