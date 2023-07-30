@@ -10,13 +10,4 @@
 </template>
 
 <script setup>
-  import { inject } from "vue";
-
-  defineProps({ quiz: Object });
-
-  let { name, changeName } = inject('name');
-
-  setTimeout(() => {
-    name.value = 'A New Name';
-  },2000);
 </script>

@@ -4,7 +4,7 @@
 
   <QuizQuestion />
 
-  <QuizFooter :quiz="quiz" />
+  <QuizFooter />
 </template>
 
 <script setup>
