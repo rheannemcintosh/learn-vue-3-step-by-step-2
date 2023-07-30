@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button @click="changeName">{{ name }}</button>
+    <button>{{ state.name }}</button>
 
     <ul>
       <li><a href="#">Get a Job</a></li>
@@ -10,4 +10,5 @@
 </template>
 
 <script setup>
+  import { state } from "@/stores/quizStore";
 </script>
