@@ -1,5 +1,7 @@
 <script setup>
     import { usePiniaCounterStore } from "@/stores/PiniaCounterStore";
+
+    let counter = usePiniaCounterStore();
 </script>
 
 <template>

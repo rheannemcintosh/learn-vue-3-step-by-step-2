@@ -5,5 +5,13 @@ export let usePiniaCounterStore = defineStore('counter', {
         return {
             count: 0
         };
+    },
+
+    actions: {
+        increment() {
+            if (this.count < 10) {
+                this.count++;
+            }
+        }
     }
-})
+});
