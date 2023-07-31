@@ -20,6 +20,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/episode-21">Episode 21</RouterLink>
         <RouterLink to="/quiz">Quiz</RouterLink>
         <RouterLink to="/counter">Counter</RouterLink>
+        <RouterLink to="/pinia-counter">Pinia Counter</RouterLink>
       </nav>
     </div>
   </header>
