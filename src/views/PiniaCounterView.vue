@@ -12,6 +12,11 @@
     <p>
       {{ counter.count }}
     </p>
-    <button @click="counter.increment()">Increment ({{ counter.remaining }} Remaining)</button>
+    <button
+      @click="counter.increment()"
+      :disabled="!counter.remaining"
+    >
+      Increment ({{ counter.remaining }} Remaining)
+    </button>
   </div>
 </template>
