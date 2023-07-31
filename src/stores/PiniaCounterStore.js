@@ -13,5 +13,11 @@ export let usePiniaCounterStore = defineStore('counter', {
                 this.count++;
             }
         }
+    },
+
+    getters: {
+        remaining() {
+            return 10 - this.count;
+        }
     }
 });

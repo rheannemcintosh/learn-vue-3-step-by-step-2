@@ -12,6 +12,6 @@
     <p>
       {{ counter.count }}
     </p>
-    <button @click="counter.increment()">Increment</button>
+    <button @click="counter.increment()">Increment ({{ counter.remaining }} Remaining)</button>
   </div>
 </template>
